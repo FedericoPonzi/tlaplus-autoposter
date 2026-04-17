@@ -1,0 +1,48 @@
+# Autoposter configuration
+# All secrets (API keys, tokens) come from environment variables, not this file.
+
+# Target month/year. Set to "auto" to use the previous calendar month.
+month: auto
+year: auto
+
+# Tracked repositories
+repos:
+  - name: TLC
+    slug: tlaplus/tlaplus
+  - name: Vscode Extension
+    slug: tlaplus/vscode-tlaplus
+  - name: TLAPM
+    slug: tlaplus/tlapm
+  - name: Apalache
+    slug: apalache-mc/apalache
+
+# LLM configuration
+# Provider is selected via the DEVUPDATE_LLM_PROVIDER env var.
+# Supported: azure_openai, openai, anthropic, ollama
+llm:
+  provider: azure_openai
+  model: gpt-5.1
+  # Azure-specific (used when provider is azure_openai)
+  azure_deployment: gpt-5-1
+  azure_api_version: "2024-10-21"
+  # Ollama-specific
+  ollama_base_url: http://localhost:11434
+
+# Metabase public dashboard
+metabase:
+  dashboard_url: https://metabase.tlapl.us/public/dashboard/cf7e1a79-19b6-4be1-88bf-0a3fd5aa0dec
+  card_uuids: []
+
+# Google Group archive
+google_group:
+  archive_url: https://discuss.tlapl.us/maillist.html
+
+# Foundation grants page
+grants:
+  url: https://foundation.tlapl.us/grants/index.html
+
+# Target repository for PR creation
+target_repo: tlaplus/foundation-website
+
+# Local output directory
+output_dir: output
