@@ -1,0 +1,2 @@
+[console_scripts]
+devupdate = autoposter.cli:main

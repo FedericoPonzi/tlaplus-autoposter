@@ -1,0 +1,45 @@
+---
+title: "{{ month_name }} {{ year }} Development Update"
+layout: post
+---
+
+# {{ month_name }} {{ year }} Development Update
+
+{{ intro }}
+
+<!-- add hand-written highlights here -->
+
+## Development Updates
+
+Summaries of merged pull requests (and significant issues or releases) for
+each project this month.
+
+{% for bullet in dev_updates %}
+- {{ bullet }}
+{% endfor %}
+
+### By the Numbers
+
+| Metric                        | {{ month_name }} {{ year }} |
+| ----------------------------- | -----------: |
+| Open issues                   | {{ metrics.open_issues }} |
+| Merged pull requests          | {{ metrics.merged_prs }} |
+| Commits                       | {{ metrics.commits }} |
+| Releases                      | {{ metrics.releases }} |
+| Active contributors           | {{ metrics.active_contributors }} |
+| New contributors              | {{ metrics.new_contributors }} |
+| Google Group messages          | {{ metrics.google_group_messages }} |
+| Tool runs (TLC / Apalache)    | {{ metrics.tlc_runs }} / {{ metrics.apalache_runs }} |
+
+![Pull requests per month](./assets/{{ year }}-{{ month_padded }}/prs_per_month.svg)
+![Commits per month](./assets/{{ year }}-{{ month_padded }}/commits_per_month.svg)
+![Active contributors per month](./assets/{{ year }}-{{ month_padded }}/active_contributors_per_month.svg)
+
+> Tool usage stats are opt-in and anonymized; actual usage is likely higher.
+> Source: [metabase.tlapl.us](https://metabase.tlapl.us/public/dashboard/cf7e1a79-19b6-4be1-88bf-0a3fd5aa0dec).
+
+### Community & Events
+
+{% for item in community_items %}
+- {{ item }}
+{% endfor %}
