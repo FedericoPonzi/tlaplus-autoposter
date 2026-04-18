@@ -1,0 +1,15 @@
+[
+  {
+    "month": 3,
+    "year": 2026,
+    "open_issues": 643,
+    "merged_prs": 46,
+    "commits": 136,
+    "releases": 5,
+    "active_contributors": 11,
+    "new_contributors": 1,
+    "google_group_messages": 40,
+    "tlc_runs": 209261,
+    "apalache_runs": 0
+  }
+]

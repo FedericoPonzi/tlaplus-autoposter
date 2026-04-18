@@ -1,0 +1,14 @@
+INFO autoposter.builder.metrics: Computed metrics for 03/2026: 46 PRs, 136 commits, 11 active contributors
+INFO autoposter.builder.metrics: Replaced existing history entry for 03/2026
+INFO autoposter.builder.charts: Rendered output/charts/prs_per_month.svg
+INFO autoposter.builder.charts: Rendered output/charts/commits_per_month.svg
+INFO autoposter.builder.charts: Rendered output/charts/active_contributors_per_month.svg
+INFO autoposter.builder.renderer: Rendered post (16340 characters)
+WARNING autoposter.builder.validator: Post validation found 6 error(s)
+WARNING autoposter.cli: Validation: Content contains a em dash ('—'); use a regular hyphen instead
+WARNING autoposter.cli: Validation: Content contains a en dash ('–'); use a regular hyphen instead
+WARNING autoposter.cli: Validation: URL not in collected set: https://metabase.tlapl.us/public/dashboard/cf7e1a79-19b6-4be1-88bf-0a3fd5aa0dec
+WARNING autoposter.cli: Validation: Referenced chart file does not exist: ./assets/2026-03/prs_per_month.svg (resolved to output/charts/assets/2026-03/prs_per_month.svg)
+WARNING autoposter.cli: Validation: Referenced chart file does not exist: ./assets/2026-03/commits_per_month.svg (resolved to output/charts/assets/2026-03/commits_per_month.svg)
+WARNING autoposter.cli: Validation: Referenced chart file does not exist: ./assets/2026-03/active_contributors_per_month.svg (resolved to output/charts/assets/2026-03/active_contributors_per_month.svg)
+INFO autoposter.builder.renderer: Wrote post to output/2026-03-dev-update.md
